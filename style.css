@@ -1,118 +1,37 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
 body {
-  background: rgb(246, 114, 128);
-  background: -moz-linear-gradient(
-    197deg,
-    rgba(246, 114, 128, 1) 15%,
-    rgba(192, 108, 132, 1) 59%
-  );
-  background: -webkit-linear-gradient(
-    197deg,
-    rgba(246, 114, 128, 1) 15%,
-    rgba(192, 108, 132, 1) 59%
-  );
-  background: linear-gradient(
-    197deg,
-    rgba(246, 114, 128, 1) 15%,
-    rgba(192, 108, 132, 1) 59%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f67280",endColorstr="#c06c84",GradientType=1);
-  font-size: 20px;
-  font-weight: 200;
-}
-.container {
-  width: 100%;
-  max-width: 650px;
-  margin: auto;
-  text-align: left;
-  -webkit-box-shadow: 1px 2px 10px 4px rgba(0, 0, 0, 0.79);
-  box-shadow: 1px 2px 10px 4px rgba(0, 0, 0, 0.79);
-}
-.wrapper {
-  width: 100%;
-  max-width: 650px;
+  margin: 0;
 }
 
-h2 {
-  text-align: left;
+/**************************************************************/
+/* Specific Stylings */
+
+.header {
+  padding: 48px 16px;
+  text-align: center;
+  background-color: #eee;
 }
 
-article {
-  display: flex;
-  flex-wrap: no-wrap;
-  max-width: 100%;
-  flex: 1;
-  flex-direction: column;
-  padding: 0 2em 0 2em;
-  align-items: left;
-}
-
-.header2 {
-  display: flex;
-  flex-wrap: no-wrap;
-  flex: 1;
-  max-width: 100%;
-  flex-direction: row;
-  padding: 0 2em 0 2em;
-  color: white;
-}
-
-.contact {
-  background-color: #355c7d;
-  color: white;
-}
-
-nav {
-  padding: 2em 0 2em 0;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  font-weight: 200;
-}
-
-a:hover {
-  color: #c06c84;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-
-h1,
-h2 {
-  color: #c06c84;
-  font-weight: 900;
-  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.91);
-}
-
-h1 {
-  font-size: 3em;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-.header2 h1,
-h2 {
-  color: #355c7d;
-  font-weight: 900;
-  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.91);
-}
-
-h1,
-h2 {
-  color: #c06c84;
-  font-weight: 900;
-  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.91);
-}
-.contact h2 {
-  color: #355c7d;
-  font-weight: 900;
-  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.91);
-}
-
-.underline {
-  border-bottom: solid 1px white;
-  padding-right: 10em;
-  margin-right: 15cm;
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
 }
