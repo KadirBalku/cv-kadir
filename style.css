@@ -8,30 +8,134 @@
   font-family: "Roboto", sans-serif;
 }
 
-h1,
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: black;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: "Oswald", sans-serif;
+  color: #2f5233;
 }
 
 body {
   margin: 0;
 }
 
+header div {
+  height: 100%;
+  margin: 0;
+  margin-bottom: 10em;
+}
+
+*::selection {
+  background-color: #b1d8b7;
+}
 /**************************************************************/
 /* Specific Stylings */
 
 .header {
   padding: 48px 16px;
   text-align: center;
-  background-color: #eee;
+  background-color: #b1d8b7;
+}
+
+.profession::after {
+  content: " 🤩 ";
+}
+
+.nav-link {
+  padding: 4px 8px;
+  color: #2f5233;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #2f5233;
+  background-color: #94c973;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.nav-link:active {
+  color: white;
+  background-color: grey;
+}
+
+.nav-link + .nav-link {
+  margin-left: 0.5em;
 }
 
 .main {
-  max-width: 800px;
+  max-width: 650px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 1em;
+}
+
+.main > * + * {
+  margin-top: 48px;
+}
+
+.main > * {
+  border-top: 2px solid #2f5233;
+}
+
+.main > *::first-child {
+  border-top: none;
+}
+
+a {
+  color: #2f5233;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #94c973;
+}
+
+/* SVG Dividers */
+.custom-shape-divider-top-1661351316 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1661351316 svg {
+  position: relative;
+  display: block;
+  width: calc(108% + 1.3px);
+  height: 112px;
+}
+
+.custom-shape-divider-top-1661351316 .shape-fill {
+  fill: #b1d8b7;
+}
+
+.custom-shape-divider-bottom-1661351375 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1661351375 svg {
+  position: relative;
+  display: block;
+  width: calc(108% + 1.3px);
+  height: 112px;
+}
+
+.custom-shape-divider-bottom-1661351375 .shape-fill {
+  fill: #b1d8b7;
 }
