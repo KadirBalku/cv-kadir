@@ -84,7 +84,7 @@ header div {
   border-top: 2px solid #2f5233;
 }
 
-.main > *::first-child {
+.main > *:first-child {
   border-top: none;
 }
 
@@ -144,15 +144,13 @@ a:hover {
 /* center the blockquote in the page */
 .blockquote-wrapper {
   display: flex;
-  height: 100vh;
   padding: 0 20px;
 }
 
 /* Blockquote main style */
 .blockquote {
   position: relative;
-  font-family: "Barlow Condensed", sans-serif;
-  max-width: 620px;
+  max-width: 650px;
   margin: 80px auto;
   align-self: center;
 }
@@ -178,7 +176,7 @@ a:hover {
   border-radius: 0 50px 0 0;
   width: 60px;
   height: 60px;
-  bottom: -62px;
+  bottom: -60px;
   left: 50px;
   border-bottom: none;
   border-left: none;
@@ -211,7 +209,7 @@ a:hover {
   font-weight: 400;
   line-height: 1.2;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 14px;
   z-index: 1;
   margin-left: 150px;
   padding-left: 12px;
