@@ -167,6 +167,12 @@ ol li {
   margin-top: 3rem;
 }
 
+@media screen and (min-width: 768px) {
+  .main > * + * {
+    margin-top: 5rem;
+  }
+}
+
 .main > * {
   border-top: 0.125rem solid var(--dark-green);
   padding: 0 1rem;
