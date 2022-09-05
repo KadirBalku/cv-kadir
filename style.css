@@ -97,6 +97,15 @@ a {
 a:hover {
   color: #94c973;
 }
+.experience-heading {
+  display: inline-block;
+}
+
+.experience-subheading {
+  display: inline-block;
+}
+/**************************************************************/
+/* Block Quote and SVG Dividers */
 
 /* SVG Dividers */
 .custom-shape-divider-top-1661351316 {
