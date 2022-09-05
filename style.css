@@ -10,7 +10,7 @@ html {
 
 h1 {
   font-family: "Oswald", sans-serif;
-  color: black;
+  color: #015249;
 }
 
 h2,
@@ -19,7 +19,7 @@ h4,
 h5,
 h6 {
   font-family: "Oswald", sans-serif;
-  color: #2f5233;
+  color: #015249;
 }
 
 body {
@@ -33,19 +33,42 @@ header div {
 }
 
 *::selection {
-  background-color: #b1d8b7;
+  background-color: #77c9d4;
+  color: #015249;
+}
+
+a {
+  color: #015249;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #77c9d4;
 }
 /**************************************************************/
 /* Specific Stylings */
 
 .header {
   padding: 48px 16px;
+  padding-top: 72px;
   text-align: center;
-  background-color: #b1d8b7;
+  background-color: #57bc90;
+  position: relative;
 }
 
 .profession::after {
   content: " 🤩 ";
+}
+
+.hire-me {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  background: #77c9d4;
+  color: #015249;
 }
 
 .nav-link {
@@ -55,10 +78,13 @@ header div {
 }
 
 .nav-link:hover {
-  color: #2f5233;
-  background-color: #94c973;
-  text-transform: uppercase;
+  color: #77c9d4;
+  text-transform: lowercase;
   font-weight: 900;
+}
+
+.nav-link:hover::before {
+  content: ".";
 }
 
 .nav-link:active {
@@ -82,21 +108,18 @@ header div {
 
 .main > * {
   border-top: 2px solid #2f5233;
+  padding: 0 16px;
 }
 
 .main > *:first-child {
   border-top: none;
 }
 
-a {
-  color: #2f5233;
-  text-decoration: none;
-  font-weight: 600;
+.article-heading {
+  position: relative;
+  left: -16px;
 }
 
-a:hover {
-  color: #94c973;
-}
 .experience-heading {
   display: inline-block;
 }
@@ -126,7 +149,7 @@ a:hover {
 }
 
 .custom-shape-divider-top-1661351316 .shape-fill {
-  fill: #b1d8b7;
+  fill: #57bc90;
 }
 
 .custom-shape-divider-bottom-1661351375 {
@@ -146,7 +169,7 @@ a:hover {
 }
 
 .custom-shape-divider-bottom-1661351375 .shape-fill {
-  fill: #b1d8b7;
+  fill: #57bc90;
 }
 
 /* blockquotes */
@@ -196,7 +219,7 @@ a:hover {
   content: "";
   position: absolute;
   width: 80px;
-  border: 6px solid #b1d8b7;
+  border: 6px solid #57bc90;
   bottom: -3px;
   left: 50px;
   z-index: 2;
