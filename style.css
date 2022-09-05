@@ -46,6 +46,18 @@ a {
 a:hover {
   color: #77c9d4;
 }
+
+figure {
+  all: unset;
+}
+
+ul li {
+  margin-left: -1rem;
+}
+
+ol li {
+  margin-left: -1.5rem;
+}
 /**************************************************************/
 /* Specific Stylings */
 
