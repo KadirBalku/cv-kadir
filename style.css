@@ -19,11 +19,19 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  font-family: "Oswald", sans-serif;
-  color: var(--dark-green);
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
 }
 
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+h1,
 h2,
 h3,
 h4,
@@ -105,6 +113,23 @@ ol li {
   border-radius: 0.25rem;
   background: var(--accent-clr);
   color: var(--dark-green);
+  z-index: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .hire-me {
+    position: fixed;
+  }
+}
+
+@media print {
+  .hire-me {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
 }
 
 .nav-link {
