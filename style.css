@@ -17,6 +17,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 @media screen and (min-width: 768px) {
@@ -152,18 +153,45 @@ ol li {
 }
 
 .nav-link:hover {
-  color: var(--accent-clr);
+  color: white;
+  border-left: 0.5rem solid var(--accent-clr);
+  border-right: 0.5rem solid var(--accent-clr);
+  background-color: var(--accent-clr);
+  animation: myAnim 0.75s ease-out 0s 1 normal forwards;
+  border-radius: 0.75rem;
+  padding: 0.15rem;
   text-transform: lowercase;
   font-weight: 900;
 }
 
-.nav-link:hover::before {
-  content: ".";
-}
+@keyframes myAnim {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
 
-.nav-link:active {
-  color: white;
-  background-color: grey;
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 @media screen and (min-width: 768px) {
