@@ -73,7 +73,7 @@ a:hover {
 
 .nav-link {
   padding: 4px 8px;
-  color: #2f5233;
+  color: #015249;
   text-decoration: none;
 }
 
@@ -107,7 +107,7 @@ a:hover {
 }
 
 .main > * {
-  border-top: 2px solid #2f5233;
+  border-top: 2px solid #015249;
   padding: 0 16px;
 }
 
@@ -190,7 +190,7 @@ a:hover {
 /* Blockquote header */
 .blockquote h1 {
   position: relative; /* for pseudos */
-  color: #2f5233;
+  color: #015249;
   font-weight: normal;
   line-height: 1;
   margin: 0;
@@ -204,7 +204,7 @@ a:hover {
 .blockquote h1:after {
   content: "";
   position: absolute;
-  border: 2px solid #2f5233;
+  border: 2px solid #015249;
   border-radius: 0 50px 0 0;
   width: 60px;
   height: 60px;
