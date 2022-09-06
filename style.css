@@ -87,7 +87,12 @@ ol li {
   padding: 3rem 1rem;
   padding-top: 4.5rem;
   text-align: center;
-  background-color: var(--light-green);
+  background-image: linear-gradient(
+    235deg,
+    var(--light-green),
+    var(--accent-clr)
+  );
+
   position: relative;
 }
 
@@ -154,9 +159,9 @@ ol li {
 
 .nav-link:hover {
   color: white;
-  border-left: 0.5rem solid var(--accent-clr);
-  border-right: 0.5rem solid var(--accent-clr);
-  background-color: var(--accent-clr);
+  border-left: 0.5rem solid var(--light-clr);
+  border-right: 0.5rem solid var(--light-clr);
+  background-color: var(--light-clr);
   animation: myAnim 0.75s ease-out 0s 1 normal forwards;
   border-radius: 0.75rem;
   padding: 0.15rem;
@@ -245,50 +250,6 @@ ol li {
 }
 
 /**************************************************************/
-/* Block Quote and SVG Dividers */
-
-/* SVG Dividers */
-.custom-shape-divider-top-1661351316 {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-top-1661351316 svg {
-  position: relative;
-  display: block;
-  width: calc(108% + 1.3px);
-  height: 112px;
-}
-
-.custom-shape-divider-top-1661351316 .shape-fill {
-  fill: var(--light-green);
-}
-
-.custom-shape-divider-bottom-1661351375 {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-bottom-1661351375 svg {
-  position: relative;
-  display: block;
-  width: calc(108% + 1.3px);
-  height: 112px;
-}
-
-.custom-shape-divider-bottom-1661351375 .shape-fill {
-  fill: var(--light-green);
-}
-
 /* blockquotes */
 /* center the blockquote in the page */
 .blockquote-wrapper {
@@ -336,7 +297,7 @@ ol li {
   content: "";
   position: absolute;
   width: 80px;
-  border: 6px solid var(--light-green);
+  border: 6 + px solid var(--accent-clr);
   bottom: -3px;
   left: 50px;
   z-index: 2;
