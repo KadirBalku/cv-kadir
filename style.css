@@ -339,7 +339,7 @@ ol li {
 /*chooses dark theme if user has dark theme as default*/
 @media screen and (prefers-color-scheme: dark) {
   body {
-    --bg-dark: #001614;
+    --bg-dark: #001f1c;
     --main-font-color: rgb(226, 220, 220);
     background-color: var(--bg-dark);
 
@@ -356,5 +356,9 @@ ol li {
 
   .main>* {
     border-top: 0.125rem solid var(--light-green);
+  }
+
+  a {
+    color: var(--light-green);
   }
 }
