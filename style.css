@@ -109,6 +109,7 @@ ol li {
 
 .profession {
   font-size: 0.25em;
+  color: var(--dark-green)
 }
 
 .profession::after {
