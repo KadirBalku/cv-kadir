@@ -18,7 +18,7 @@
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -40,7 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: var(--dark-green);
 }
 
@@ -91,10 +91,7 @@ ol li {
   padding: 3rem 1rem;
   padding-top: 4.5rem;
   text-align: center;
-  background-image: linear-gradient(235deg,
-      var(--light-green),
-      var(--accent-clr));
-
+  background-image: linear-gradient(235deg, var(--light-green), var(--accent-clr));
   position: relative;
 }
 
@@ -109,11 +106,11 @@ ol li {
 
 .profession {
   font-size: 0.25em;
-  color: var(--dark-green)
+  color: var(--dark-green);
 }
 
 .profession::after {
-  content: " 🤩 ";
+  content: ' 🤩 ';
 }
 
 .hire-me {
@@ -122,9 +119,18 @@ ol li {
   top: 1rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
+  opacity: 0.5;
   background: var(--accent-clr);
   color: var(--dark-green);
-  z-index: 1;
+  transform-origin: top right;
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.header:hover .hire-me,
+.header:focus-within .hire-me {
+  opacity: 1;
+  transform: scale(1.5);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 992px) {
@@ -334,15 +340,12 @@ ol li {
   margin-left: -12px;
 }
 
-
 /*chooses dark theme if user has dark theme as default*/
 @media screen and (prefers-color-scheme: dark) {
   body {
     --bg-dark: #001f1c;
     --main-font-color: rgb(226, 220, 220);
     background-color: var(--bg-dark);
-
-
   }
 
   h2,
@@ -350,7 +353,7 @@ ol li {
   h4,
   h5,
   h6 {
-    color: var(--light-green)
+    color: var(--light-green);
   }
 
   .main>* {
