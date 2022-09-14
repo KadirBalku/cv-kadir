@@ -285,7 +285,7 @@ ol li {
 }
 
 /* Blockquote right double quotes */
-.blockquote h1:after {
+/* .blockquote h1:after {
   content: "";
   position: absolute;
   border: 2px solid var(--dark-green);
@@ -299,15 +299,16 @@ ol li {
   z-index: 3;
 }
 
-.blockquote h1:before {
+*/
+/* .blockquote h1:before {
   content: "";
   position: absolute;
   width: 80px;
-  border: 6 + px solid var(--accent-clr);
+  border: 6px solid var(--accent-clr);
   bottom: -3px;
   left: 50px;
   z-index: 2;
-}
+} */
 
 /* increase header size after 600px */
 @media all and (min-width: 600px) {
@@ -324,11 +325,9 @@ ol li {
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.2;
-  margin: 0;
-  padding-top: 14px;
+  margin: -0.5rem;
   z-index: 1;
-  margin-left: 150px;
-  padding-left: 12px;
+  margin-left: 55%;
 }
 
 .blockquote h4:first-letter {
