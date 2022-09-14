@@ -5,6 +5,8 @@
   --light-green: #57bc90;
   --accent-clr: #77c9d4;
   --light-clr: #a5a5af;
+  --bg-light: white;
+  --main-font-color: black;
 }
 
 /**************************************************************/
@@ -45,6 +47,8 @@ h6 {
 body {
   margin: 0;
   font-size: 16px;
+  background-color: var(--bg-light);
+  color: var(--main-font-color);
 }
 
 header div {
@@ -87,11 +91,9 @@ ol li {
   padding: 3rem 1rem;
   padding-top: 4.5rem;
   text-align: center;
-  background-image: linear-gradient(
-    235deg,
-    var(--light-green),
-    var(--accent-clr)
-  );
+  background-image: linear-gradient(235deg,
+      var(--light-green),
+      var(--accent-clr));
 
   position: relative;
 }
@@ -100,6 +102,7 @@ ol li {
   font-size: 4rem;
   margin-bottom: 4rem;
 }
+
 .main-heading {
   font-size: 1em;
 }
@@ -107,6 +110,7 @@ ol li {
 .profession {
   font-size: 0.25em;
 }
+
 .profession::after {
   content: " 🤩 ";
 }
@@ -200,7 +204,7 @@ ol li {
 }
 
 @media screen and (min-width: 768px) {
-  .nav-link + .nav-link {
+  .nav-link+.nav-link {
     margin-left: 1rem;
   }
 }
@@ -211,22 +215,22 @@ ol li {
   padding: 1rem;
 }
 
-.main > * + * {
+.main>*+* {
   margin-top: 3rem;
 }
 
 @media screen and (min-width: 768px) {
-  .main > * + * {
+  .main>*+* {
     margin-top: 5rem;
   }
 }
 
-.main > * {
+.main>* {
   border-top: 0.125rem solid var(--dark-green);
   padding: 0 1rem;
 }
 
-.main > *:first-child {
+.main>*:first-child {
   border-top: none;
 }
 
@@ -267,7 +271,8 @@ ol li {
 
 /* Blockquote header */
 .blockquote h1 {
-  position: relative; /* for pseudos */
+  position: relative;
+  /* for pseudos */
   color: var(--dark-green);
   font-weight: normal;
   line-height: 1;
@@ -327,4 +332,28 @@ ol li {
 
 .blockquote h4:first-letter {
   margin-left: -12px;
+}
+
+
+/*chooses dark theme if user has dark theme as default*/
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --bg-dark: #001614;
+    --main-font-color: rgb(226, 220, 220);
+    background-color: var(--bg-dark);
+
+
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--light-green)
+  }
+
+  .main>* {
+    border-top: 0.125rem solid var(--light-green);
+  }
 }
